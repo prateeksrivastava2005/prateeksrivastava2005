@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake & Ladder — Prateek Srivastava GitHub Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(18, 24, 38, 0.85);
+      --accent: #a855f7;
+      --accent-glow: rgba(168, 85, 247, 0.4);
+      --cyan: #06b6d4;
+      --cyan-glow: rgba(6, 182, 212, 0.35);
+      --snake-color: #ef4444;
+      --ladder-color: #10b981;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      user-select: none;
+    }
+
+    body {
+      background: radial-gradient(circle at 50% 20%, #171c31 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+      animation: fadeInDown 0.8s ease-out;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #c084fc, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      max-width: 1100px;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .board-wrapper {
+      position: relative;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px var(--accent-glow);
+      backdrop-filter: blur(12px);
+    }
+
+    #board {
+      display: grid;
+      grid-template-columns: repeat(10, 52px);
+      grid-template-rows: repeat(10, 52px);
+      gap: 4px;
+      background: #0d1322;
+      border-radius: 12px;
+      padding: 6px;
+      position: relative;
+    }
+
+    @media (max-width: 600px) {
+      #board {
+        grid-template-columns: repeat(10, 32px);
+        grid-template-rows: repeat(10, 32px);
+        gap: 2px;
+        padding: 4px;
+      }
+    }
+
+    .cell {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background: #151d30;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      font-size: 0.8rem;
+      font-family: 'Fira Code', monospace;
+      font-weight: 600;
+      color: #64748b;
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 600px) {
+      .cell {
+        font-size: 0.65rem;
+      }
+    }
+
+    .cell.alternate {
+      background: #182239;
+    }
+
+    .cell-num {
+      position: absolute;
+      top: 3px;
+      left: 4px;
+      font-size: 0.65rem;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 600px) {
+      .cell-num {
+        font-size: 0.55rem;
+        top: 1px;
+        left: 2px;
+      }
+    }
+
+    .cell.snake-head {
+      border: 1.5px solid var(--snake-color);
+      box-shadow: inset 0 0 10px rgba(239, 68, 68, 0.3);
+      color: #fca5a5;
+    }
+
+    .cell.ladder-bottom {
+      border: 1.5px solid var(--ladder-color);
+      box-shadow: inset 0 0 10px rgba(16, 185, 129, 0.3);
+      color: #6ee7b7;
+    }
+
+    .cell.goal {
+      border: 2px solid #fbbf24;
+      background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), #151d30);
+      color: #fef08a;
+      box-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+    }
+
+    .badge-icon {
+      font-size: 1.1rem;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .badge-icon {
+        font-size: 0.85rem;
+        margin-top: 6px;
+      }
+    }
+
+    /* Player Tokens */
+    .token {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 20;
+      transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      box-shadow: 0 0 12px currentColor;
+    }
+
+    @media (max-width: 600px) {
+      .token {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+      }
+    }
+
+    .token-p1 {
+      background: #c084fc;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      box-shadow: 0 0 14px #a855f7;
+    }
+
+    .token-p2 {
+      background: #06b6d4;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      box-shadow: 0 0 14px #06b6d4;
+    }
+
+    /* Side Panel */
+    .panel {
+      width: 320px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(12px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .status-card {
+      background: #111827;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .turn-indicator {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .turn-badge {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    /* Dice Box */
+    .dice-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin: 8px 0;
+    }
+
+    .dice {
+      width: 72px;
+      height: 72px;
+      background: #1f2937;
+      border: 2px solid #a855f7;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #ffffff;
+      box-shadow: 0 0 25px var(--accent-glow);
+      transition: transform 0.2s;
+    }
+
+    .dice.rolling {
+      animation: spin 0.4s infinite linear;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg) scale(1.05); }
+      50% { transform: rotate(180deg) scale(0.95); }
+      100% { transform: rotate(360deg) scale(1.05); }
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #a855f7, #6366f1);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 28px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+      transition: all 0.2s;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(168, 85, 247, 0.6);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .btn-secondary {
+      background: #1e293b;
+      box-shadow: none;
+      border: 1px solid var(--border);
+      padding: 10px 16px;
+      font-size: 0.85rem;
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      background: #334155;
+      box-shadow: none;
+    }
+
+    .mode-select {
+      display: flex;
+      gap: 8px;
+    }
+
+    .mode-btn {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: #1e293b;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .mode-btn.active {
+      background: #a855f7;
+      color: white;
+      border-color: #a855f7;
+      box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+    }
+
+    /* Move Logs */
+    .logs-container {
+      background: #0f172a;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 10px 14px;
+      height: 140px;
+      overflow-y: auto;
+      font-family: 'Fira Code', monospace;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .logs-container::-webkit-scrollbar {
+      width: 4px;
+    }
+    .logs-container::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+
+    .log-item {
+      line-height: 1.4;
+    }
+    .log-item.ladder { color: #34d399; }
+    .log-item.snake { color: #f87171; }
+    .log-item.win { color: #fbbf24; font-weight: bold; }
+
+    /* Rules modal / footer */
+    .rules-card {
+      margin-top: 24px;
+      max-width: 900px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    @media (max-width: 650px) {
+      .rules-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .legend-box {
+      background: #111827;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    footer {
+      margin-top: 32px;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: #a855f7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Win Modal */
+    .win-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .win-overlay.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .win-box {
+      background: #182238;
+      border: 2px solid #fbbf24;
+      border-radius: 20px;
+      padding: 32px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 0 50px rgba(251, 191, 36, 0.5);
+      animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    @keyframes popIn {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐍 Snake & Ladder Game</h1>
+    <div class="subtitle">Built by Prateek Srivastava · Hosted on GitHub Pages</div>
+  </header>
+
+  <div class="main-container">
+    <!-- Board -->
+    <div class="board-wrapper">
+      <div id="board"></div>
+      <div id="token-p1" class="token token-p1" title="Player 1">P1</div>
+      <div id="token-p2" class="token token-p2" title="Player 2 / AI">AI</div>
+    </div>
+
+    <!-- Controls Panel -->
+    <div class="panel">
+      <div>
+        <div style="font-size: 0.8rem; color: #94a3b8; margin-bottom: 6px; font-weight: 600;">GAME MODE</div>
+        <div class="mode-select">
+          <button id="mode-ai" class="mode-btn active" onclick="setMode('ai')">🤖 Vs AI</button>
+          <button id="mode-2p" class="mode-btn" onclick="setMode('2p')">👥 2 Players</button>
+        </div>
+      </div>
+
+      <div class="status-card">
+        <div class="turn-indicator" id="turn-display">
+          <span class="turn-badge" id="turn-badge" style="background: #a855f7;"></span>
+          <span id="turn-text">Player 1's Turn</span>
+        </div>
+        <div style="display: flex; justify-content: space-around; font-family: 'Fira Code', monospace; font-size: 0.85rem; margin-top: 8px;">
+          <div>P1: <strong id="score-p1" style="color: #c084fc;">1</strong></div>
+          <div><span id="p2-label">AI</span>: <strong id="score-p2" style="color: #06b6d4;">1</strong></div>
+        </div>
+      </div>
+
+      <div class="dice-container">
+        <div id="dice" class="dice">🎲</div>
+        <button id="roll-btn" class="btn" onclick="handleRoll()">
+          <span>Roll Dice</span>
+        </button>
+      </div>
+
+      <div>
+        <div style="font-size: 0.75rem; color: #64748b; margin-bottom: 4px; font-weight: 600;">ACTIVITY LOG</div>
+        <div class="logs-container" id="logs">
+          <div class="log-item">🎮 Welcome! Roll the dice to begin.</div>
+        </div>
+      </div>
+
+      <button class="btn btn-secondary" onclick="resetGame()">🔄 Reset Match</button>
+    </div>
+  </div>
+
+  <div class="rules-card">
+    <strong style="color: #f8fafc; font-size: 0.95rem;">Game Rules & Board Map</strong>
+    <div class="rules-grid">
+      <div class="legend-box">
+        <span style="color: #ef4444; font-weight: bold;">🔻 Snakes (Slide down)</span>
+        <div style="margin-top: 4px; font-family: 'Fira Code', monospace; font-size: 0.8rem; line-height: 1.5;">
+          97→78 · 95→56 · 88→24 · 62→19<br/>
+          49→11 · 36→6 · 32→10 · 17→7
+        </div>
+      </div>
+      <div class="legend-box">
+        <span style="color: #10b981; font-weight: bold;">🪜 Ladders (Climb up)</span>
+        <div style="margin-top: 4px; font-family: 'Fira Code', monospace; font-size: 0.8rem; line-height: 1.5;">
+          4→14 · 9→31 · 20→38 · 28→84<br/>
+          40→59 · 51→67 · 63→81 · 71→91
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Win Modal -->
+  <div id="win-modal" class="win-overlay">
+    <div class="win-box">
+      <h2 style="font-size: 2rem; margin-bottom: 8px;">🏆 VICTORY!</h2>
+      <p id="win-desc" style="color: #cbd5e1; margin-bottom: 20px; font-size: 1.1rem;">Player 1 has conquered the board!</p>
+      <button class="btn" onclick="resetGame(); closeWinModal();">Play Again</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Crafted by <a href="https://github.com/prateeksrivastava2005" target="_blank">Prateek Srivastava</a> · <a href="https://linkedin.com/in/prateek-srivastava-529b0426a" target="_blank">LinkedIn</a></p>
+  </footer>
+
+  <script>
+    // Audio synthesizer using Web Audio API
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function playBeep(freq, type, duration) {
+      try {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.15, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + duration);
+      } catch (e) {}
+    }
+
+    const SNAKES = { 97: 78, 95: 56, 88: 24, 62: 19, 49: 11, 36: 6, 32: 10, 17: 7 };
+    const LADDERS = { 4: 14, 9: 31, 20: 38, 28: 84, 40: 59, 51: 67, 63: 81, 71: 91 };
+
+    let gameMode = 'ai';
+    let currentPlayer = 1;
+    let positions = { 1: 1, 2: 1 };
+    let isRolling = false;
+    let gameOver = false;
+
+    const boardEl = document.getElementById('board');
+    const p1Token = document.getElementById('token-p1');
+    const p2Token = document.getElementById('token-p2');
+    const diceEl = document.getElementById('dice');
+    const rollBtn = document.getElementById('roll-btn');
+    const turnText = document.getElementById('turn-text');
+    const turnBadge = document.getElementById('turn-badge');
+    const scoreP1 = document.getElementById('score-p1');
+    const scoreP2 = document.getElementById('score-p2');
+    const logsEl = document.getElementById('logs');
+    const p2Label = document.getElementById('p2-label');
+
+    // Build 100 cells
+    const cellMap = {};
+    function initBoard() {
+      boardEl.innerHTML = '';
+      for (let row = 9; row >= 0; row--) {
+        const isEvenRow = (9 - row) % 2 === 0;
+        const rowCells = [];
+        for (let col = 0; col < 10; col++) {
+          const num = isEvenRow ? (row * 10 + (col + 1)) : (row * 10 + (10 - col));
+          rowCells.push(num);
+        }
+        for (let num of rowCells) {
+          const cell = document.createElement('div');
+          cell.className = 'cell' + (num % 2 === 0 ? ' alternate' : '');
+          if (num === 100) cell.classList.add('goal');
+          if (SNAKES[num]) cell.classList.add('snake-head');
+          if (LADDERS[num]) cell.classList.add('ladder-bottom');
+
+          const numSpan = document.createElement('span');
+          numSpan.className = 'cell-num';
+          numSpan.textContent = num;
+          cell.appendChild(numSpan);
+
+          if (num === 100) {
+            const icon = document.createElement('div');
+            icon.className = 'badge-icon';
+            icon.textContent = '👑';
+            cell.appendChild(icon);
+          } else if (SNAKES[num]) {
+            const icon = document.createElement('div');
+            icon.className = 'badge-icon';
+            icon.textContent = '🐍';
+            cell.appendChild(icon);
+          } else if (LADDERS[num]) {
+            const icon = document.createElement('div');
+            icon.className = 'badge-icon';
+            icon.textContent = '🪜';
+            cell.appendChild(icon);
+          }
+
+          boardEl.appendChild(cell);
+          cellMap[num] = cell;
+        }
+      }
+      setTimeout(updateTokens, 100);
+    }
+
+    function setMode(mode) {
+      if (isRolling) return;
+      gameMode = mode;
+      document.getElementById('mode-ai').classList.toggle('active', mode === 'ai');
+      document.getElementById('mode-2p').classList.toggle('active', mode === '2p');
+      p2Label.textContent = mode === 'ai' ? 'AI' : 'P2';
+      p2Token.textContent = mode === 'ai' ? 'AI' : 'P2';
+      resetGame();
+    }
+
+    function log(msg, type = '') {
+      const item = document.createElement('div');
+      item.className = 'log-item ' + type;
+      item.innerHTML = msg;
+      logsEl.prepend(item);
+    }
+
+    function updateTokens() {
+      placeToken(p1Token, positions[1], -5, -5);
+      placeToken(p2Token, positions[2], 5, 5);
+      scoreP1.textContent = positions[1];
+      scoreP2.textContent = positions[2];
+    }
+
+    function placeToken(token, cellNum, offsetX, offsetY) {
+      const cell = cellMap[cellNum];
+      if (!cell) return;
+      const rect = cell.getBoundingClientRect();
+      const parentRect = boardEl.getBoundingClientRect();
+      const left = rect.left - parentRect.left + (rect.width / 2) - (token.offsetWidth / 2) + offsetX;
+      const top = rect.top - parentRect.top + (rect.height / 2) - (token.offsetHeight / 2) + offsetY;
+      token.style.left = `${left}px`;
+      token.style.top = `${top}px`;
+    }
+
+    window.addEventListener('resize', updateTokens);
+
+    function handleRoll() {
+      if (isRolling || gameOver) return;
+      rollDice();
+    }
+
+    function rollDice() {
+      isRolling = true;
+      rollBtn.disabled = true;
+      diceEl.classList.add('rolling');
+      playBeep(280, 'triangle', 0.2);
+
+      let rolls = 0;
+      const interval = setInterval(() => {
+        const temp = Math.floor(Math.random() * 6) + 1;
+        diceEl.textContent = temp;
+        rolls++;
+        if (rolls > 8) {
+          clearInterval(interval);
+          diceEl.classList.remove('rolling');
+          const finalVal = Math.floor(Math.random() * 6) + 1;
+          diceEl.textContent = finalVal;
+          playBeep(440, 'sine', 0.15);
+          movePlayer(currentPlayer, finalVal);
+        }
+      }, 50);
+    }
+
+    async function movePlayer(player, steps) {
+      let currentPos = positions[player];
+      let targetPos = currentPos + steps;
+      const pName = player === 1 ? 'Player 1' : (gameMode === 'ai' ? 'AI' : 'Player 2');
+
+      if (targetPos > 100) {
+        log(`🎲 ${pName} rolled <b>${steps}</b> (needs exact ${100 - currentPos} to finish).`);
+        finishTurn();
+        return;
+      }
+
+      log(`🎲 ${pName} rolled <b>${steps}</b> → moving to ${targetPos}`);
+      
+      // Step by step move
+      for (let s = currentPos + 1; s <= targetPos; s++) {
+        positions[player] = s;
+        updateTokens();
+        playBeep(320 + s * 4, 'sine', 0.08);
+        await new Promise(r => setTimeout(r, 180));
+      }
+
+      // Check snake
+      if (SNAKES[targetPos]) {
+        await new Promise(r => setTimeout(r, 300));
+        const slideTo = SNAKES[targetPos];
+        playBeep(180, 'sawtooth', 0.4);
+        log(`🐍 Oh no! Snake bit ${pName} at ${targetPos} → slid down to <b>${slideTo}</b>!`, 'snake');
+        positions[player] = slideTo;
+        updateTokens();
+      }
+      // Check ladder
+      else if (LADDERS[targetPos]) {
+        await new Promise(r => setTimeout(r, 300));
+        const climbTo = LADDERS[targetPos];
+        playBeep(620, 'square', 0.35);
+        log(`🪜 Nice! ${pName} climbed ladder at ${targetPos} → ascended to <b>${climbTo}</b>!`, 'ladder');
+        positions[player] = climbTo;
+        updateTokens();
+      }
+
+      // Check win
+      if (positions[player] === 100) {
+        gameOver = true;
+        playBeep(880, 'sine', 0.6);
+        log(`👑 ${pName} REACHED 100 AND WON THE MATCH!`, 'win');
+        document.getElementById('win-desc').textContent = `${pName} has successfully conquered the board!`;
+        document.getElementById('win-modal').classList.add('show');
+        rollBtn.disabled = true;
+        return;
+      }
+
+      finishTurn();
+    }
+
+    function finishTurn() {
+      isRolling = false;
+      currentPlayer = currentPlayer === 1 ? 2 : 1;
+
+      if (currentPlayer === 1) {
+        turnText.textContent = "Player 1's Turn";
+        turnBadge.style.background = '#a855f7';
+        rollBtn.disabled = false;
+      } else {
+        const p2Name = gameMode === 'ai' ? 'AI' : 'Player 2';
+        turnText.textContent = `${p2Name}'s Turn`;
+        turnBadge.style.background = '#06b6d4';
+
+        if (gameMode === 'ai') {
+          rollBtn.disabled = true;
+          setTimeout(() => {
+            if (!gameOver) rollDice();
+          }, 900);
+        } else {
+          rollBtn.disabled = false;
+        }
+      }
+    }
+
+    function resetGame() {
+      positions = { 1: 1, 2: 1 };
+      currentPlayer = 1;
+      gameOver = false;
+      isRolling = false;
+      turnText.textContent = "Player 1's Turn";
+      turnBadge.style.background = '#a855f7';
+      diceEl.textContent = '🎲';
+      rollBtn.disabled = false;
+      logsEl.innerHTML = '<div class="log-item">🎮 Match restarted! Roll to begin.</div>';
+      updateTokens();
+    }
+
+    function closeWinModal() {
+      document.getElementById('win-modal').classList.remove('show');
+    }
+
+    initBoard();
+  </script>
+</body>
+</html>
