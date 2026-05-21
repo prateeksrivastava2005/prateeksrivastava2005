@@ -2,3 +2,4 @@
 
 - `2026-05-20 09:17`: refactor(rag): decouple embedding provider from vector store
 - `2026-05-20 20:08`: feat(rag): add confidence threshold validation for retrieved chunks
+- `2026-05-21 10:27`: feat(rag): add semantic chunking with recursive character splitter
