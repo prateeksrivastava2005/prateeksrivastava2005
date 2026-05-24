@@ -7,3 +7,4 @@
 - `2026-05-21 18:32`: feat(rag): add semantic chunking with recursive character splitter
 - `2026-05-22 19:44`: docs(ml): document acoustic biomarker methodology and metrics
 - `2026-05-22 20:14`: feat(agents): scaffold autonomous multi-agent task runner
+- `2026-05-24 21:10`: refactor(ml): modularize audio normalization and preprocessing module
