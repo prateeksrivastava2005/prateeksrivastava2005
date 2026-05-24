@@ -8,3 +8,4 @@
 - `2026-05-22 19:44`: docs(ml): document acoustic biomarker methodology and metrics
 - `2026-05-22 20:14`: feat(agents): scaffold autonomous multi-agent task runner
 - `2026-05-24 21:10`: refactor(ml): modularize audio normalization and preprocessing module
+- `2026-05-24 22:21`: test(rag): add unit tests for transcript cleaner and tokenizer
