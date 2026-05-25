@@ -9,3 +9,4 @@
 - `2026-05-22 20:14`: feat(agents): scaffold autonomous multi-agent task runner
 - `2026-05-24 21:10`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-05-24 22:21`: test(rag): add unit tests for transcript cleaner and tokenizer
+- `2026-05-25 21:21`: fix(rag): optimize timestamp extraction and parser formatting
