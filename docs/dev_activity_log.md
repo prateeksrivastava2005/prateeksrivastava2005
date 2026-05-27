@@ -13,3 +13,4 @@
 - `2026-05-26 14:38`: feat(ci): configure automated testing workflow
 - `2026-05-26 22:02`: feat(frontend): scaffold radio channels dashboard UI components
 - `2026-05-27 10:35`: feat(profile): optimize shields badges and stats cards
+- `2026-05-27 15:40`: chore: clean up project structure and remove redundant logs
