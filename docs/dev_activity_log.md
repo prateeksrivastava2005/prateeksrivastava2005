@@ -15,3 +15,4 @@
 - `2026-05-27 10:35`: feat(profile): optimize shields badges and stats cards
 - `2026-05-27 15:40`: chore: clean up project structure and remove redundant logs
 - `2026-05-28 10:02`: refactor(rag): decouple embedding provider from vector store
+- `2026-05-28 12:49`: fix(rag): optimize timestamp extraction and parser formatting
