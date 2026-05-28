@@ -17,3 +17,4 @@
 - `2026-05-28 10:02`: refactor(rag): decouple embedding provider from vector store
 - `2026-05-28 12:49`: fix(rag): optimize timestamp extraction and parser formatting
 - `2026-05-28 18:54`: feat(workflow): configure Platane snake contribution graph animation
+- `2026-05-28 20:06`: feat(ml): implement jitter and shimmer calculation algorithms
