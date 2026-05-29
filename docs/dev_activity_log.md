@@ -18,3 +18,4 @@
 - `2026-05-28 12:49`: fix(rag): optimize timestamp extraction and parser formatting
 - `2026-05-28 18:54`: feat(workflow): configure Platane snake contribution graph animation
 - `2026-05-28 20:06`: feat(ml): implement jitter and shimmer calculation algorithms
+- `2026-05-29 14:10`: feat(ml): implement Decision Tree with cost-complexity pruning
