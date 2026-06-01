@@ -22,3 +22,4 @@
 - `2026-05-29 22:13`: feat(ml): implement jitter and shimmer calculation algorithms
 - `2026-05-30 19:04`: feat(agents): implement external tool execution sandbox
 - `2026-05-30 22:10`: feat(dsa): optimize binary tree lowest common ancestor search
+- `2026-06-01 13:44`: refactor(rag): decouple embedding provider from vector store
