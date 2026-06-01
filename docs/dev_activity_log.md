@@ -23,3 +23,4 @@
 - `2026-05-30 19:04`: feat(agents): implement external tool execution sandbox
 - `2026-05-30 22:10`: feat(dsa): optimize binary tree lowest common ancestor search
 - `2026-06-01 13:44`: refactor(rag): decouple embedding provider from vector store
+- `2026-06-01 19:43`: feat(profile): optimize shields badges and stats cards
