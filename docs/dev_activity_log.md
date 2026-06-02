@@ -25,3 +25,4 @@
 - `2026-06-01 13:44`: refactor(rag): decouple embedding provider from vector store
 - `2026-06-01 19:43`: feat(profile): optimize shields badges and stats cards
 - `2026-06-02 09:51`: test(ml): evaluate model sensitivity and specificity on patient test set
+- `2026-06-02 12:17`: feat(rag): add direct timestamp link synthesis for answer citations
