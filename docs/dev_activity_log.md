@@ -26,3 +26,4 @@
 - `2026-06-01 19:43`: feat(profile): optimize shields badges and stats cards
 - `2026-06-02 09:51`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-06-02 12:17`: feat(rag): add direct timestamp link synthesis for answer citations
+- `2026-06-02 22:58`: chore: clean up project structure and remove redundant logs
