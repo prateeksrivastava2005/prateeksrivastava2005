@@ -24,3 +24,4 @@
 - `2026-05-30 22:10`: feat(dsa): optimize binary tree lowest common ancestor search
 - `2026-06-01 13:44`: refactor(rag): decouple embedding provider from vector store
 - `2026-06-01 19:43`: feat(profile): optimize shields badges and stats cards
+- `2026-06-02 09:51`: test(ml): evaluate model sensitivity and specificity on patient test set
