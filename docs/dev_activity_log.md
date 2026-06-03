@@ -28,3 +28,4 @@
 - `2026-06-02 12:17`: feat(rag): add direct timestamp link synthesis for answer citations
 - `2026-06-02 22:58`: chore: clean up project structure and remove redundant logs
 - `2026-06-03 12:25`: refactor(agents): streamline agent decision tree branching
+- `2026-06-03 16:29`: feat(ml): initialize audio acoustic feature extraction pipeline
