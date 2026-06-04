@@ -31,3 +31,4 @@
 - `2026-06-03 16:29`: feat(ml): initialize audio acoustic feature extraction pipeline
 - `2026-06-03 19:08`: feat(dsa): implement dynamic programming solutions for knapsack variants
 - `2026-06-04 13:37`: feat(agents): scaffold autonomous multi-agent task runner
+- `2026-06-04 20:25`: refactor(rag): decouple embedding provider from vector store
