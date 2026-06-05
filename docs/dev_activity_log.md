@@ -32,3 +32,4 @@
 - `2026-06-03 19:08`: feat(dsa): implement dynamic programming solutions for knapsack variants
 - `2026-06-04 13:37`: feat(agents): scaffold autonomous multi-agent task runner
 - `2026-06-04 20:25`: refactor(rag): decouple embedding provider from vector store
+- `2026-06-05 09:55`: test(rag): add unit tests for transcript cleaner and tokenizer
