@@ -33,3 +33,4 @@
 - `2026-06-04 13:37`: feat(agents): scaffold autonomous multi-agent task runner
 - `2026-06-04 20:25`: refactor(rag): decouple embedding provider from vector store
 - `2026-06-05 09:55`: test(rag): add unit tests for transcript cleaner and tokenizer
+- `2026-06-05 10:40`: chore: update project dependencies and build scripts
