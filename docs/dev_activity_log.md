@@ -39,3 +39,4 @@
 - `2026-06-05 17:38`: perf(ui): reduce re-renders during high-frequency audio stream events
 - `2026-06-07 09:43`: refactor(rag): streamline vector query generator
 - `2026-06-08 13:49`: feat(ml): train Random Forest classifier with hyperparameter grid search
+- `2026-06-08 17:07`: refactor(ml): modularize audio normalization and preprocessing module
