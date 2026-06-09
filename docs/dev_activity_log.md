@@ -41,3 +41,4 @@
 - `2026-06-08 13:49`: feat(ml): train Random Forest classifier with hyperparameter grid search
 - `2026-06-08 17:07`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-06-08 21:10`: feat(rag): initialize YouTube transcript ingestion pipeline
+- `2026-06-09 11:32`: feat(rag): add confidence threshold validation for retrieved chunks
