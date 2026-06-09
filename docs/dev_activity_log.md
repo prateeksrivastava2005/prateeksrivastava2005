@@ -43,3 +43,4 @@
 - `2026-06-08 21:10`: feat(rag): initialize YouTube transcript ingestion pipeline
 - `2026-06-09 11:32`: feat(rag): add confidence threshold validation for retrieved chunks
 - `2026-06-09 13:55`: feat(ml): add Harmonics-to-Noise Ratio (HNR) feature extractor
+- `2026-06-09 17:53`: refactor(components): extract reusable audio visualizer component
