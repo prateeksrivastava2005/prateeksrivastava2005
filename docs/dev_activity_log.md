@@ -45,3 +45,4 @@
 - `2026-06-09 13:55`: feat(ml): add Harmonics-to-Noise Ratio (HNR) feature extractor
 - `2026-06-09 17:53`: refactor(components): extract reusable audio visualizer component
 - `2026-06-09 20:38`: test(rag): add unit tests for transcript cleaner and tokenizer
+- `2026-06-10 11:49`: perf(ui): reduce re-renders during high-frequency audio stream events
