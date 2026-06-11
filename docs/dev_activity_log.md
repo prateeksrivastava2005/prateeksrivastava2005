@@ -47,3 +47,4 @@
 - `2026-06-09 20:38`: test(rag): add unit tests for transcript cleaner and tokenizer
 - `2026-06-10 11:49`: perf(ui): reduce re-renders during high-frequency audio stream events
 - `2026-06-10 17:58`: feat(agents): implement dynamic memory state management for agents
+- `2026-06-11 09:59`: chore: clean up project structure and remove redundant logs
