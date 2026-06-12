@@ -31,3 +31,4 @@ jobs:
           branch: output
           folder: dist
           clean: false
+
