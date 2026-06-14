@@ -50,3 +50,4 @@
 - `2026-06-11 09:59`: chore: clean up project structure and remove redundant logs
 - `2026-06-11 10:53`: feat(ml): add Harmonics-to-Noise Ratio (HNR) feature extractor
 - `2026-06-12 12:56`: fix(rag): optimize timestamp extraction and parser formatting
+- `2026-06-14 10:48`: feat(dsa): benchmark Dijkstra vs A* shortest path algorithms
