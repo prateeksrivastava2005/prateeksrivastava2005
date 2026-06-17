@@ -56,3 +56,4 @@
 - `2026-06-17 12:45`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-06-17 20:42`: feat(ml): build soft-voting ensemble model combining RF, KNN, and DT
 - `2026-06-17 21:28`: perf(ui): reduce re-renders during high-frequency audio stream events
+- `2026-06-17 22:28`: feat(rag): add fallback keyword retrieval for zero-vector results
