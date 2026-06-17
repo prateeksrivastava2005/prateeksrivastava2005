@@ -53,3 +53,4 @@
 - `2026-06-14 10:48`: feat(dsa): benchmark Dijkstra vs A* shortest path algorithms
 - `2026-06-15 19:30`: docs(rag): update YouTube RAG pipeline architecture diagram
 - `2026-06-16 22:38`: feat(rag): add direct timestamp link synthesis for answer citations
+- `2026-06-17 12:45`: test(ml): evaluate model sensitivity and specificity on patient test set
