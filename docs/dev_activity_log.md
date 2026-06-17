@@ -55,3 +55,4 @@
 - `2026-06-16 22:38`: feat(rag): add direct timestamp link synthesis for answer citations
 - `2026-06-17 12:45`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-06-17 20:42`: feat(ml): build soft-voting ensemble model combining RF, KNN, and DT
+- `2026-06-17 21:28`: perf(ui): reduce re-renders during high-frequency audio stream events
