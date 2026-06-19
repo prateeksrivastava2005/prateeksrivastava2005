@@ -58,3 +58,4 @@
 - `2026-06-17 21:28`: perf(ui): reduce re-renders during high-frequency audio stream events
 - `2026-06-17 22:28`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-06-18 14:01`: feat(ui): add channel search and favorite station pinning
+- `2026-06-19 12:00`: feat(dsa): solve graph topological sort and cycle detection problems
