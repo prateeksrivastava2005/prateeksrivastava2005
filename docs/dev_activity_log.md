@@ -61,3 +61,4 @@
 - `2026-06-19 12:00`: feat(dsa): solve graph topological sort and cycle detection problems
 - `2026-06-20 12:04`: feat(rag): integrate PostgreSQL with pgvector extension
 - `2026-06-21 10:15`: fix(agents): handle timeout exceptions in asynchronous agent workers
+- `2026-06-21 17:31`: fix(accessibility): improve ARIA attributes and keyboard navigation
