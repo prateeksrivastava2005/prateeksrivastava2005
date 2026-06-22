@@ -62,3 +62,4 @@
 - `2026-06-20 12:04`: feat(rag): integrate PostgreSQL with pgvector extension
 - `2026-06-21 10:15`: fix(agents): handle timeout exceptions in asynchronous agent workers
 - `2026-06-21 17:31`: fix(accessibility): improve ARIA attributes and keyboard navigation
+- `2026-06-22 18:36`: feat(rag): add fallback keyword retrieval for zero-vector results
