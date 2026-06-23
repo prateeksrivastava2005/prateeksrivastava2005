@@ -40,3 +40,4 @@ class LangGraphQueryRefiner:
         if not search_results or search_results[0].get("relevance", 0.0) < self.confidence_threshold:
             return "refine_query"
         return "synthesize_answer"
+
