@@ -166,3 +166,4 @@ subprocess.run([GIT_EXE, "commit", "-m", final_msg], cwd=REPO_DIR, env=env, chec
 total_commits += 1
 
 print(f"Successfully generated {total_commits} commits across the past 6 months!")
+

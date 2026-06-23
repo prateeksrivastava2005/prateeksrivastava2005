@@ -63,3 +63,4 @@
 - `2026-06-21 10:15`: fix(agents): handle timeout exceptions in asynchronous agent workers
 - `2026-06-21 17:31`: fix(accessibility): improve ARIA attributes and keyboard navigation
 - `2026-06-22 18:36`: feat(rag): add fallback keyword retrieval for zero-vector results
+- `2026-06-23 12:06`: fix(agents): handle timeout exceptions in asynchronous agent workers

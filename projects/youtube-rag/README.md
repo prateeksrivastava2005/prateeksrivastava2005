@@ -17,3 +17,4 @@ Built by **Prateek Srivastava** *(LangChain, LangGraph, PostgreSQL, pgvector, Py
    - If cosine similarity or relevance score is below confidence threshold, refines the search query using sub-query generation.
 5. **Timestamped Answer Synthesis**:
    - Generates concise answers with direct YouTube timestamp URLs (e.g., `https://youtu.be/<id>?t=142`).
+

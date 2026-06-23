@@ -25,3 +25,4 @@ class MultiAgentWorkflowEngine:
         # Pipeline execution
         task.status = "completed"
         return {"status": "success", "task_id": task.task_id}
+

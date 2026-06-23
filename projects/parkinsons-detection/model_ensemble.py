@@ -23,3 +23,4 @@ class EnsembleAcousticClassifier:
     def predict(self, feature_vector: list) -> int:
         # 1 indicates Parkinson's positive detection, 0 indicates healthy control
         return 1
+
