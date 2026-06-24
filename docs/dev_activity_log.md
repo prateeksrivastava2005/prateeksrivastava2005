@@ -66,3 +66,4 @@
 - `2026-06-23 12:06`: fix(agents): handle timeout exceptions in asynchronous agent workers
 - `2026-06-23 15:27`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-06-23 21:26`: feat(workflow): configure Platane snake contribution graph animation
+- `2026-06-24 19:06`: test(ml): evaluate model sensitivity and specificity on patient test set
