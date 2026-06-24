@@ -68,3 +68,4 @@
 - `2026-06-23 21:26`: feat(workflow): configure Platane snake contribution graph animation
 - `2026-06-24 19:06`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-06-24 21:46`: feat(ci): configure automated testing workflow
+- `2026-06-24 22:55`: feat(rag): add fallback keyword retrieval for zero-vector results
