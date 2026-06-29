@@ -75,3 +75,4 @@
 - `2026-06-29 09:26`: feat(streaming): implement low-latency audio stream buffer player
 - `2026-06-29 10:13`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-06-29 11:57`: docs(rag): update YouTube RAG pipeline architecture diagram
+- `2026-06-29 12:24`: perf(ml): optimize ensemble weights based on cross-validation ROC-AUC
