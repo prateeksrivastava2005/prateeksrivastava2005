@@ -73,3 +73,4 @@
 - `2026-06-26 16:15`: feat(langgraph): design agentic search refinement state graph
 - `2026-06-27 22:54`: feat(rag): add confidence threshold validation for retrieved chunks
 - `2026-06-29 09:26`: feat(streaming): implement low-latency audio stream buffer player
+- `2026-06-29 10:13`: test(ml): evaluate model sensitivity and specificity on patient test set
