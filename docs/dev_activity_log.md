@@ -76,3 +76,4 @@
 - `2026-06-29 10:13`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-06-29 11:57`: docs(rag): update YouTube RAG pipeline architecture diagram
 - `2026-06-29 12:24`: perf(ml): optimize ensemble weights based on cross-validation ROC-AUC
+- `2026-06-29 22:16`: chore: update project dependencies and build scripts
