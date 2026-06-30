@@ -79,3 +79,4 @@
 - `2026-06-29 22:16`: chore: update project dependencies and build scripts
 - `2026-06-30 13:46`: feat(ui): add channel search and favorite station pinning
 - `2026-06-30 15:42`: style(ui): apply responsive dark theme styling to player controls
+- `2026-06-30 20:09`: feat(ml): extract 13-band Mel-Frequency Cepstral Coefficients (MFCC)
