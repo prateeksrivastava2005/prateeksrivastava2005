@@ -78,3 +78,4 @@
 - `2026-06-29 12:24`: perf(ml): optimize ensemble weights based on cross-validation ROC-AUC
 - `2026-06-29 22:16`: chore: update project dependencies and build scripts
 - `2026-06-30 13:46`: feat(ui): add channel search and favorite station pinning
+- `2026-06-30 15:42`: style(ui): apply responsive dark theme styling to player controls
