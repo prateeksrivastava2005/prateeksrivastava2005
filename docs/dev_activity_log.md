@@ -81,3 +81,4 @@
 - `2026-06-30 15:42`: style(ui): apply responsive dark theme styling to player controls
 - `2026-06-30 20:09`: feat(ml): extract 13-band Mel-Frequency Cepstral Coefficients (MFCC)
 - `2026-07-01 09:37`: fix(accessibility): improve ARIA attributes and keyboard navigation
+- `2026-07-03 09:37`: refactor(components): extract reusable audio visualizer component
