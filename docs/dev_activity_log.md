@@ -87,3 +87,4 @@
 - `2026-07-04 17:04`: feat(workflow): configure Platane snake contribution graph animation
 - `2026-07-07 09:39`: docs(ml): document acoustic biomarker methodology and metrics
 - `2026-07-07 12:42`: style(theme): enhance mobile viewport layout for streaming dock
+- `2026-07-07 18:33`: feat(ml): initialize audio acoustic feature extraction pipeline
