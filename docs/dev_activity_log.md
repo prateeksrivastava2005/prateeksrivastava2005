@@ -86,3 +86,4 @@
 - `2026-07-04 11:11`: feat(agents): implement dynamic memory state management for agents
 - `2026-07-04 17:04`: feat(workflow): configure Platane snake contribution graph animation
 - `2026-07-07 09:39`: docs(ml): document acoustic biomarker methodology and metrics
+- `2026-07-07 12:42`: style(theme): enhance mobile viewport layout for streaming dock
