@@ -89,3 +89,4 @@
 - `2026-07-07 12:42`: style(theme): enhance mobile viewport layout for streaming dock
 - `2026-07-07 18:33`: feat(ml): initialize audio acoustic feature extraction pipeline
 - `2026-07-07 21:13`: feat(dsa): solve graph topological sort and cycle detection problems
+- `2026-07-08 13:25`: fix(agents): handle timeout exceptions in asynchronous agent workers
