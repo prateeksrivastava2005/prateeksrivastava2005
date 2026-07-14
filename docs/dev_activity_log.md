@@ -98,3 +98,4 @@
 - `2026-07-13 20:41`: feat(rag): initialize YouTube transcript ingestion pipeline
 - `2026-07-14 13:06`: perf(pgvector): add indexing benchmarks for high-dimensional embeddings
 - `2026-07-14 17:16`: chore: clean up project structure and remove redundant logs
+- `2026-07-14 19:06`: feat(ui): add channel search and favorite station pinning
