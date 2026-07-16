@@ -100,3 +100,4 @@
 - `2026-07-14 17:16`: chore: clean up project structure and remove redundant logs
 - `2026-07-14 19:06`: feat(ui): add channel search and favorite station pinning
 - `2026-07-15 13:38`: feat(dsa): solve graph topological sort and cycle detection problems
+- `2026-07-16 19:54`: refactor(components): extract reusable audio visualizer component
