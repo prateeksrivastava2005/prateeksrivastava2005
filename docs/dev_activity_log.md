@@ -101,3 +101,4 @@
 - `2026-07-14 19:06`: feat(ui): add channel search and favorite station pinning
 - `2026-07-15 13:38`: feat(dsa): solve graph topological sort and cycle detection problems
 - `2026-07-16 19:54`: refactor(components): extract reusable audio visualizer component
+- `2026-07-16 22:31`: feat(game): add interactive Snake & Ladder game for GitHub Pages
