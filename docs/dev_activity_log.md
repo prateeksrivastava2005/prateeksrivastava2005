@@ -106,3 +106,4 @@
 - `2026-07-20 13:10`: feat(ml): add signal silence stripping and noise filtering
 - `2026-07-21 15:00`: feat(langgraph): design agentic search refinement state graph
 - `2026-07-21 17:56`: test(rag): add unit tests for transcript cleaner and tokenizer
+- `2026-07-22 14:37`: test(rag): add unit tests for transcript cleaner and tokenizer
