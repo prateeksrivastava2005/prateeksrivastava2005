@@ -110,3 +110,4 @@
 - `2026-07-22 22:27`: feat(rag): integrate PostgreSQL with pgvector extension
 - `2026-07-23 21:55`: feat(ml): implement Decision Tree with cost-complexity pruning
 - `2026-07-24 12:42`: feat(ml): implement Decision Tree with cost-complexity pruning
+- `2026-07-25 15:39`: test(rag): add unit tests for transcript cleaner and tokenizer
