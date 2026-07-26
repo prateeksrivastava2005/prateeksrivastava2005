@@ -112,3 +112,4 @@
 - `2026-07-24 12:42`: feat(ml): implement Decision Tree with cost-complexity pruning
 - `2026-07-25 15:39`: test(rag): add unit tests for transcript cleaner and tokenizer
 - `2026-07-25 22:59`: feat(rag): add fallback keyword retrieval for zero-vector results
+- `2026-07-26 21:11`: docs(ml): document acoustic biomarker methodology and metrics
