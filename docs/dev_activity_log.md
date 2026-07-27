@@ -116,3 +116,4 @@
 - `2026-07-26 22:01`: feat(dsa): implement dynamic programming solutions for knapsack variants
 - `2026-07-27 12:17`: chore: update project dependencies and build scripts
 - `2026-07-27 15:44`: perf(ml): optimize ensemble weights based on cross-validation ROC-AUC
+- `2026-07-27 19:55`: feat(game): add interactive Snake & Ladder game for GitHub Pages
