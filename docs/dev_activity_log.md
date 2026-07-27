@@ -114,3 +114,4 @@
 - `2026-07-25 22:59`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-07-26 21:11`: docs(ml): document acoustic biomarker methodology and metrics
 - `2026-07-26 22:01`: feat(dsa): implement dynamic programming solutions for knapsack variants
+- `2026-07-27 12:17`: chore: update project dependencies and build scripts
