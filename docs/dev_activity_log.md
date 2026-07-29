@@ -121,3 +121,4 @@
 - `2026-07-28 13:52`: feat(workflow): configure Platane snake contribution graph animation
 - `2026-07-28 14:14`: feat(rag): add semantic chunking with recursive character splitter
 - `2026-07-28 16:42`: test(ml): evaluate model sensitivity and specificity on patient test set
+- `2026-07-29 10:49`: feat(ml): implement Decision Tree with cost-complexity pruning
