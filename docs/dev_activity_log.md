@@ -122,3 +122,4 @@
 - `2026-07-28 14:14`: feat(rag): add semantic chunking with recursive character splitter
 - `2026-07-28 16:42`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-07-29 10:49`: feat(ml): implement Decision Tree with cost-complexity pruning
+- `2026-07-29 22:41`: test(ml): evaluate model sensitivity and specificity on patient test set
