@@ -126,3 +126,4 @@
 - `2026-07-30 14:01`: chore: clean up project structure and remove redundant logs
 - `2026-07-30 17:16`: feat(agents): scaffold autonomous multi-agent task runner
 - `2026-07-30 22:16`: feat(rag): add confidence threshold validation for retrieved chunks
+- `2026-07-31 14:50`: refactor(ml): modularize audio normalization and preprocessing module
