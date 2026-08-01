@@ -128,3 +128,4 @@
 - `2026-07-30 22:16`: feat(rag): add confidence threshold validation for retrieved chunks
 - `2026-07-31 14:50`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-07-31 20:38`: refactor(rag): streamline vector query generator
+- `2026-08-01 18:12`: feat(rag): integrate PostgreSQL with pgvector extension
