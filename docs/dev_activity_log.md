@@ -141,3 +141,4 @@
 - `2026-08-05 13:35`: feat(rag): initialize YouTube transcript ingestion pipeline
 - `2026-08-05 15:19`: feat(rag): add direct timestamp link synthesis for answer citations
 - `2026-08-05 18:27`: feat(agents): scaffold autonomous multi-agent task runner
+- `2026-08-05 22:38`: feat(ml): train baseline K-Nearest Neighbors classifier
