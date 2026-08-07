@@ -145,3 +145,4 @@
 - `2026-08-06 16:13`: feat(streaming): implement low-latency audio stream buffer player
 - `2026-08-06 19:50`: chore: update project dependencies and build scripts
 - `2026-08-07 10:32`: feat(agents): implement external tool execution sandbox
+- `2026-08-07 13:39`: fix(rag): optimize timestamp extraction and parser formatting
