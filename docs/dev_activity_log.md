@@ -148,3 +148,4 @@
 - `2026-08-07 13:39`: fix(rag): optimize timestamp extraction and parser formatting
 - `2026-08-07 19:52`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-08-08 12:12`: feat(rag): add semantic chunking with recursive character splitter
+- `2026-08-08 21:02`: feat(streaming): implement low-latency audio stream buffer player
