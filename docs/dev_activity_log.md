@@ -151,3 +151,4 @@
 - `2026-08-08 21:02`: feat(streaming): implement low-latency audio stream buffer player
 - `2026-08-09 21:04`: docs(ml): document acoustic biomarker methodology and metrics
 - `2026-08-10 12:31`: feat(rag): add fallback keyword retrieval for zero-vector results
+- `2026-08-10 15:09`: feat(dsa): implement LRU Cache using Doubly Linked List and Hash Map
