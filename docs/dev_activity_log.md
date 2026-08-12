@@ -155,3 +155,4 @@
 - `2026-08-10 18:00`: feat(dsa): add Trie implementation with prefix search and autocomplete
 - `2026-08-10 20:55`: chore: clean up project structure and remove redundant logs
 - `2026-08-12 11:44`: feat(frontend): scaffold radio channels dashboard UI components
+- `2026-08-12 21:03`: feat(rag): add fallback keyword retrieval for zero-vector results
