@@ -158,3 +158,4 @@
 - `2026-08-12 21:03`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-08-13 10:42`: feat(ui): add channel search and favorite station pinning
 - `2026-08-13 11:38`: feat(dsa): add Trie implementation with prefix search and autocomplete
+- `2026-08-13 16:57`: feat(agents): add prompt template library with dynamic variable injection
