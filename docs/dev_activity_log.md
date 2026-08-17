@@ -163,3 +163,4 @@
 - `2026-08-14 16:57`: feat(dsa): implement dynamic programming solutions for knapsack variants
 - `2026-08-14 17:55`: feat(ml): add signal silence stripping and noise filtering
 - `2026-08-17 21:33`: feat(agents): implement external tool execution sandbox
+- `2026-08-17 22:15`: feat(ml): add signal silence stripping and noise filtering
