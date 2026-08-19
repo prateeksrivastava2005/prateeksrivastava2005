@@ -164,3 +164,4 @@
 - `2026-08-14 17:55`: feat(ml): add signal silence stripping and noise filtering
 - `2026-08-17 21:33`: feat(agents): implement external tool execution sandbox
 - `2026-08-17 22:15`: feat(ml): add signal silence stripping and noise filtering
+- `2026-08-19 13:21`: fix(accessibility): improve ARIA attributes and keyboard navigation
