@@ -166,3 +166,4 @@
 - `2026-08-17 22:15`: feat(ml): add signal silence stripping and noise filtering
 - `2026-08-19 13:21`: fix(accessibility): improve ARIA attributes and keyboard navigation
 - `2026-08-21 15:44`: feat(dsa): solve graph topological sort and cycle detection problems
+- `2026-08-23 14:34`: docs(ml): document acoustic biomarker methodology and metrics
