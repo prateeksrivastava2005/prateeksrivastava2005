@@ -169,3 +169,4 @@
 - `2026-08-23 14:34`: docs(ml): document acoustic biomarker methodology and metrics
 - `2026-08-25 15:44`: feat(game): add interactive Snake & Ladder game for GitHub Pages
 - `2026-08-25 18:56`: style(theme): enhance mobile viewport layout for streaming dock
+- `2026-08-25 21:24`: feat(rag): initialize YouTube transcript ingestion pipeline
