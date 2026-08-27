@@ -174,3 +174,4 @@
 - `2026-08-26 15:34`: feat(agents): implement dynamic memory state management for agents
 - `2026-08-26 20:57`: style(ui): apply responsive dark theme styling to player controls
 - `2026-08-26 21:14`: refactor(ml): modularize audio normalization and preprocessing module
+- `2026-08-27 14:42`: feat(ci): configure automated testing workflow
