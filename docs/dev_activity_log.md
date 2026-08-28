@@ -176,3 +176,4 @@
 - `2026-08-26 21:14`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-08-27 14:42`: feat(ci): configure automated testing workflow
 - `2026-08-27 15:25`: docs(rag): update YouTube RAG pipeline architecture diagram
+- `2026-08-28 11:01`: test(ml): evaluate model sensitivity and specificity on patient test set
