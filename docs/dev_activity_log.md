@@ -177,3 +177,4 @@
 - `2026-08-27 14:42`: feat(ci): configure automated testing workflow
 - `2026-08-27 15:25`: docs(rag): update YouTube RAG pipeline architecture diagram
 - `2026-08-28 11:01`: test(ml): evaluate model sensitivity and specificity on patient test set
+- `2026-08-28 17:37`: fix(agents): handle timeout exceptions in asynchronous agent workers
