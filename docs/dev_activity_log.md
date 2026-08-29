@@ -179,3 +179,4 @@
 - `2026-08-28 11:01`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-08-28 17:37`: fix(agents): handle timeout exceptions in asynchronous agent workers
 - `2026-08-28 18:01`: refactor(agents): streamline agent decision tree branching
+- `2026-08-29 22:29`: feat(rag): implement cosine similarity search with HNSW indexing
