@@ -183,3 +183,4 @@
 - `2026-08-31 14:21`: chore: clean up project structure and remove redundant logs
 - `2026-08-31 16:24`: feat(dsa): add Trie implementation with prefix search and autocomplete
 - `2026-09-01 10:01`: fix(accessibility): improve ARIA attributes and keyboard navigation
+- `2026-09-01 13:03`: refactor(rag): decouple embedding provider from vector store
