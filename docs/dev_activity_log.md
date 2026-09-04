@@ -187,3 +187,4 @@
 - `2026-09-01 15:41`: feat(dsa): benchmark Dijkstra vs A* shortest path algorithms
 - `2026-09-01 16:41`: feat(dsa): add Trie implementation with prefix search and autocomplete
 - `2026-09-03 22:01`: test(rag): add unit tests for transcript cleaner and tokenizer
+- `2026-09-04 16:42`: style(theme): enhance mobile viewport layout for streaming dock
