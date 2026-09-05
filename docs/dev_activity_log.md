@@ -190,3 +190,4 @@
 - `2026-09-04 16:42`: style(theme): enhance mobile viewport layout for streaming dock
 - `2026-09-05 13:49`: docs(rag): update YouTube RAG pipeline architecture diagram
 - `2026-09-05 16:38`: feat(dsa): implement dynamic programming solutions for knapsack variants
+- `2026-09-05 20:45`: feat(dsa): benchmark Dijkstra vs A* shortest path algorithms
