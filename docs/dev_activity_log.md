@@ -197,3 +197,4 @@
 - `2026-09-07 20:53`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-09-09 18:51`: chore: update project dependencies and build scripts
 - `2026-09-09 19:36`: feat(rag): integrate PostgreSQL with pgvector extension
+- `2026-09-09 22:22`: refactor(ml): modularize audio normalization and preprocessing module
