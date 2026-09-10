@@ -200,3 +200,4 @@
 - `2026-09-09 22:22`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-09-10 10:21`: feat(game): add interactive Snake & Ladder game for GitHub Pages
 - `2026-09-10 17:26`: style(ui): apply responsive dark theme styling to player controls
+- `2026-09-10 19:06`: feat(ml): build soft-voting ensemble model combining RF, KNN, and DT
