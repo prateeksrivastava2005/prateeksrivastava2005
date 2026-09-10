@@ -198,3 +198,4 @@
 - `2026-09-09 18:51`: chore: update project dependencies and build scripts
 - `2026-09-09 19:36`: feat(rag): integrate PostgreSQL with pgvector extension
 - `2026-09-09 22:22`: refactor(ml): modularize audio normalization and preprocessing module
+- `2026-09-10 10:21`: feat(game): add interactive Snake & Ladder game for GitHub Pages
