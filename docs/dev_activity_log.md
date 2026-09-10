@@ -199,3 +199,4 @@
 - `2026-09-09 19:36`: feat(rag): integrate PostgreSQL with pgvector extension
 - `2026-09-09 22:22`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-09-10 10:21`: feat(game): add interactive Snake & Ladder game for GitHub Pages
+- `2026-09-10 17:26`: style(ui): apply responsive dark theme styling to player controls
