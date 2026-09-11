@@ -202,3 +202,4 @@
 - `2026-09-10 17:26`: style(ui): apply responsive dark theme styling to player controls
 - `2026-09-10 19:06`: feat(ml): build soft-voting ensemble model combining RF, KNN, and DT
 - `2026-09-11 16:45`: refactor(ml): modularize audio normalization and preprocessing module
+- `2026-09-11 22:11`: perf(ui): reduce re-renders during high-frequency audio stream events
