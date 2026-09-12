@@ -203,3 +203,4 @@
 - `2026-09-10 19:06`: feat(ml): build soft-voting ensemble model combining RF, KNN, and DT
 - `2026-09-11 16:45`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-09-11 22:11`: perf(ui): reduce re-renders during high-frequency audio stream events
+- `2026-09-12 13:49`: feat(frontend): scaffold radio channels dashboard UI components
