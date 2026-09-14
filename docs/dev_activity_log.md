@@ -209,3 +209,4 @@
 - `2026-09-13 10:17`: feat(ml): add signal silence stripping and noise filtering
 - `2026-09-13 22:15`: feat(frontend): scaffold radio channels dashboard UI components
 - `2026-09-14 15:21`: style(ui): apply responsive dark theme styling to player controls
+- `2026-09-14 19:54`: feat(rag): implement multi-video playlist batch transcription
