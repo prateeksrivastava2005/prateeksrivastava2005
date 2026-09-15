@@ -210,3 +210,4 @@
 - `2026-09-13 22:15`: feat(frontend): scaffold radio channels dashboard UI components
 - `2026-09-14 15:21`: style(ui): apply responsive dark theme styling to player controls
 - `2026-09-14 19:54`: feat(rag): implement multi-video playlist batch transcription
+- `2026-09-15 14:16`: feat(ml): implement jitter and shimmer calculation algorithms
