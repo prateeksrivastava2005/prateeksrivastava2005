@@ -217,3 +217,4 @@
 - `2026-09-16 17:48`: feat(dsa): implement LRU Cache using Doubly Linked List and Hash Map
 - `2026-09-16 22:30`: feat(dsa): solve graph topological sort and cycle detection problems
 - `2026-09-17 09:05`: refactor(rag): decouple embedding provider from vector store
+- `2026-09-17 21:25`: feat(rag): add fallback keyword retrieval for zero-vector results
