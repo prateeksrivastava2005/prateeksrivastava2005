@@ -218,3 +218,4 @@
 - `2026-09-16 22:30`: feat(dsa): solve graph topological sort and cycle detection problems
 - `2026-09-17 09:05`: refactor(rag): decouple embedding provider from vector store
 - `2026-09-17 21:25`: feat(rag): add fallback keyword retrieval for zero-vector results
+- `2026-09-18 18:23`: feat(ui): add channel search and favorite station pinning
