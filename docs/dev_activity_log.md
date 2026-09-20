@@ -220,3 +220,4 @@
 - `2026-09-17 21:25`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-09-18 18:23`: feat(ui): add channel search and favorite station pinning
 - `2026-09-19 15:47`: feat(ml): train Random Forest classifier with hyperparameter grid search
+- `2026-09-20 16:17`: feat(ml): initialize audio acoustic feature extraction pipeline
