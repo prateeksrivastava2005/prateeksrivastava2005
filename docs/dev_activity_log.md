@@ -231,3 +231,4 @@
 - `2026-09-24 11:44`: feat(agents): implement external tool execution sandbox
 - `2026-09-24 13:55`: style(ui): apply responsive dark theme styling to player controls
 - `2026-09-28 11:03`: feat(workflow): configure Platane snake contribution graph animation
+- `2026-09-28 14:30`: docs: update developer notes and milestone tracking
