@@ -236,3 +236,4 @@
 - `2026-09-30 19:09`: style(theme): enhance mobile viewport layout for streaming dock
 - `2026-10-01 10:48`: feat(agents): implement dynamic memory state management for agents
 - `2026-10-01 12:38`: feat(agents): add prompt template library with dynamic variable injection
+- `2026-10-01 17:14`: perf(ui): reduce re-renders during high-frequency audio stream events
