@@ -238,3 +238,4 @@
 - `2026-10-01 12:38`: feat(agents): add prompt template library with dynamic variable injection
 - `2026-10-01 17:14`: perf(ui): reduce re-renders during high-frequency audio stream events
 - `2026-10-01 22:24`: feat(ml): add signal silence stripping and noise filtering
+- `2026-10-02 18:27`: style(theme): enhance mobile viewport layout for streaming dock
