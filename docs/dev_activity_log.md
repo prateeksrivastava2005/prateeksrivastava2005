@@ -242,3 +242,4 @@
 - `2026-10-03 18:47`: feat(dsa): add Trie implementation with prefix search and autocomplete
 - `2026-10-05 19:05`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-10-06 10:10`: docs(ml): document acoustic biomarker methodology and metrics
+- `2026-10-07 16:18`: refactor(rag): decouple embedding provider from vector store
