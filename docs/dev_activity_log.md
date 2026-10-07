@@ -243,3 +243,4 @@
 - `2026-10-05 19:05`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-10-06 10:10`: docs(ml): document acoustic biomarker methodology and metrics
 - `2026-10-07 16:18`: refactor(rag): decouple embedding provider from vector store
+- `2026-10-07 18:18`: feat(ml): extract 13-band Mel-Frequency Cepstral Coefficients (MFCC)
