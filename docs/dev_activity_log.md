@@ -245,3 +245,4 @@
 - `2026-10-07 16:18`: refactor(rag): decouple embedding provider from vector store
 - `2026-10-07 18:18`: feat(ml): extract 13-band Mel-Frequency Cepstral Coefficients (MFCC)
 - `2026-10-08 10:14`: feat(ml): initialize audio acoustic feature extraction pipeline
+- `2026-10-08 16:50`: feat(agents): implement external tool execution sandbox
