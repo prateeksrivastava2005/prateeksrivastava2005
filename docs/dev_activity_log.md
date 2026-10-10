@@ -252,3 +252,4 @@
 - `2026-10-09 15:03`: chore: update project dependencies and build scripts
 - `2026-10-09 17:19`: feat(dsa): implement dynamic programming solutions for knapsack variants
 - `2026-10-10 13:07`: feat(dsa): implement LRU Cache using Doubly Linked List and Hash Map
+- `2026-10-10 16:19`: test(ml): evaluate model sensitivity and specificity on patient test set
