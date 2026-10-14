@@ -263,3 +263,4 @@
 - `2026-10-13 19:58`: feat(rag): implement multi-video playlist batch transcription
 - `2026-10-14 10:22`: feat(ml): train Random Forest classifier with hyperparameter grid search
 - `2026-10-14 15:20`: feat(rag): add confidence threshold validation for retrieved chunks
+- `2026-10-14 16:54`: feat(ml): train Random Forest classifier with hyperparameter grid search
