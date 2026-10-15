@@ -266,3 +266,4 @@
 - `2026-10-14 16:54`: feat(ml): train Random Forest classifier with hyperparameter grid search
 - `2026-10-14 19:26`: style(ui): apply responsive dark theme styling to player controls
 - `2026-10-14 20:18`: test(ml): evaluate model sensitivity and specificity on patient test set
+- `2026-10-15 09:05`: feat(ml): initialize audio acoustic feature extraction pipeline
