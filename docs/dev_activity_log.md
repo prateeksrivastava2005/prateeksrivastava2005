@@ -268,3 +268,4 @@
 - `2026-10-14 20:18`: test(ml): evaluate model sensitivity and specificity on patient test set
 - `2026-10-15 09:05`: feat(ml): initialize audio acoustic feature extraction pipeline
 - `2026-10-15 16:20`: feat(dsa): benchmark Dijkstra vs A* shortest path algorithms
+- `2026-10-15 17:25`: refactor(components): extract reusable audio visualizer component
