@@ -270,3 +270,4 @@
 - `2026-10-15 16:20`: feat(dsa): benchmark Dijkstra vs A* shortest path algorithms
 - `2026-10-15 17:25`: refactor(components): extract reusable audio visualizer component
 - `2026-10-16 09:29`: feat(rag): implement cosine similarity search with HNSW indexing
+- `2026-10-16 17:12`: feat(ml): build soft-voting ensemble model combining RF, KNN, and DT
