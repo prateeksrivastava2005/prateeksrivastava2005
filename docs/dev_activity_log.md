@@ -272,3 +272,4 @@
 - `2026-10-16 09:29`: feat(rag): implement cosine similarity search with HNSW indexing
 - `2026-10-16 17:12`: feat(ml): build soft-voting ensemble model combining RF, KNN, and DT
 - `2026-10-16 19:39`: style(ui): apply responsive dark theme styling to player controls
+- `2026-10-17 21:03`: feat(ml): implement jitter and shimmer calculation algorithms
