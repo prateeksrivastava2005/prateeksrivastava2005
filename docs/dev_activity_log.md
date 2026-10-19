@@ -275,3 +275,4 @@
 - `2026-10-17 21:03`: feat(ml): implement jitter and shimmer calculation algorithms
 - `2026-10-18 13:28`: feat(dsa): implement LRU Cache using Doubly Linked List and Hash Map
 - `2026-10-19 09:38`: feat(rag): add fallback keyword retrieval for zero-vector results
+- `2026-10-19 19:45`: feat(ml): add Harmonics-to-Noise Ratio (HNR) feature extractor
