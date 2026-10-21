@@ -278,3 +278,4 @@
 - `2026-10-19 19:45`: feat(ml): add Harmonics-to-Noise Ratio (HNR) feature extractor
 - `2026-10-20 15:05`: feat(profile): optimize shields badges and stats cards
 - `2026-10-20 17:58`: feat(frontend): scaffold radio channels dashboard UI components
+- `2026-10-21 11:32`: feat(ml): implement jitter and shimmer calculation algorithms
