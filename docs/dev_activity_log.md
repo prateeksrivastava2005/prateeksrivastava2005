@@ -283,3 +283,4 @@
 - `2026-10-21 16:30`: feat(frontend): scaffold radio channels dashboard UI components
 - `2026-10-21 19:35`: perf(ml): optimize ensemble weights based on cross-validation ROC-AUC
 - `2026-10-22 18:32`: chore: clean up project structure and remove redundant logs
+- `2026-10-23 10:17`: chore: update project dependencies and build scripts
