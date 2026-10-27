@@ -288,3 +288,4 @@
 - `2026-10-24 21:00`: feat(dsa): optimize binary tree lowest common ancestor search
 - `2026-10-26 16:55`: feat(ml): add signal silence stripping and noise filtering
 - `2026-10-26 19:34`: feat(ml): implement Decision Tree with cost-complexity pruning
+- `2026-10-27 17:24`: feat(ml): train baseline K-Nearest Neighbors classifier
