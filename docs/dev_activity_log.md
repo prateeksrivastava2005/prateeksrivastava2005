@@ -289,3 +289,4 @@
 - `2026-10-26 16:55`: feat(ml): add signal silence stripping and noise filtering
 - `2026-10-26 19:34`: feat(ml): implement Decision Tree with cost-complexity pruning
 - `2026-10-27 17:24`: feat(ml): train baseline K-Nearest Neighbors classifier
+- `2026-10-27 21:55`: feat(dsa): implement LRU Cache using Doubly Linked List and Hash Map
