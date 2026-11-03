@@ -302,3 +302,4 @@
 - `2026-11-02 15:05`: feat(ml): train Random Forest classifier with hyperparameter grid search
 - `2026-11-02 19:54`: feat(game): add interactive Snake & Ladder game for GitHub Pages
 - `2026-11-03 14:45`: feat(dsa): add Trie implementation with prefix search and autocomplete
+- `2026-11-03 19:31`: fix(accessibility): improve ARIA attributes and keyboard navigation
