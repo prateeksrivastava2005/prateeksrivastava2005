@@ -305,3 +305,4 @@
 - `2026-11-03 19:31`: fix(accessibility): improve ARIA attributes and keyboard navigation
 - `2026-11-06 12:47`: refactor(ml): modularize audio normalization and preprocessing module
 - `2026-11-06 13:06`: feat(agents): implement external tool execution sandbox
+- `2026-11-07 10:10`: feat(ml): add Harmonics-to-Noise Ratio (HNR) feature extractor
