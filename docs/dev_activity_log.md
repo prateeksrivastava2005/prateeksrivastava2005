@@ -307,3 +307,4 @@
 - `2026-11-06 13:06`: feat(agents): implement external tool execution sandbox
 - `2026-11-07 10:10`: feat(ml): add Harmonics-to-Noise Ratio (HNR) feature extractor
 - `2026-11-07 16:57`: feat(rag): integrate PostgreSQL with pgvector extension
+- `2026-11-10 11:15`: docs(ml): document acoustic biomarker methodology and metrics
