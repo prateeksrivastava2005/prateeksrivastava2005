@@ -313,3 +313,4 @@
 - `2026-11-12 12:31`: feat(agents): scaffold autonomous multi-agent task runner
 - `2026-11-12 19:09`: feat(frontend): scaffold radio channels dashboard UI components
 - `2026-11-13 13:42`: feat(ci): configure automated testing workflow
+- `2026-11-13 16:29`: feat(ml): extract 13-band Mel-Frequency Cepstral Coefficients (MFCC)
