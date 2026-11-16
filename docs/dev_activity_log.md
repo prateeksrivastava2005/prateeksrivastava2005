@@ -319,3 +319,4 @@
 - `2026-11-15 13:12`: feat(game): add interactive Snake & Ladder game for GitHub Pages
 - `2026-11-15 16:30`: feat(rag): add fallback keyword retrieval for zero-vector results
 - `2026-11-16 14:18`: feat(ml): extract 13-band Mel-Frequency Cepstral Coefficients (MFCC)
+- `2026-11-16 18:01`: fix(agents): handle timeout exceptions in asynchronous agent workers
