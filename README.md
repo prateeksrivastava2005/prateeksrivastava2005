@@ -96,7 +96,7 @@
 <tr>
 <td width="50%" valign="top">
 
-### 📺 YouTube RAG Application
+### 📺 [YouTube RAG Application](https://github.com/prateeksrivastava2005/Youtube-Project)
 **RAG · LangGraph · LangChain · PostgreSQL · pgvector** *(2026)*
 
 An intelligent question-answering system over YouTube videos and playlists with precise semantic search and timestamp navigation.
@@ -108,7 +108,7 @@ An intelligent question-answering system over YouTube videos and playlists with 
 
 **Stack:** `Python` `LangGraph` `LangChain` `PostgreSQL` `pgvector` `FastAPI`
 
-[![Repo](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=flat-square&logo=github)](https://github.com/prateeksrivastava2005)
+[![Repo](https://img.shields.io/badge/GitHub-Source%20Code-181717?style=flat-square&logo=github)](https://github.com/prateeksrivastava2005/Youtube-Project)
 [![Architecture](https://img.shields.io/badge/Architecture-RAG%20+%20LangGraph-A855F7?style=flat-square)](#)
 
 </td>
