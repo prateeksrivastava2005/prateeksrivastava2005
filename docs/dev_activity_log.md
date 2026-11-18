@@ -324,3 +324,4 @@
 - `2026-11-17 18:47`: feat(agents): implement dynamic memory state management for agents
 - `2026-11-18 12:38`: feat(ml): implement Decision Tree with cost-complexity pruning
 - `2026-11-18 13:14`: fix(langgraph): prevent infinite loops in query reformulation node
+- `2026-11-18 22:39`: docs(agents): write specification for multi-step agent workflow engine
